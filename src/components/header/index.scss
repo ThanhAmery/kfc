@@ -1,0 +1,78 @@
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    border-bottom: solid rgba($color: #000, $alpha: 0.1) ;
+
+    &__left, &__right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+    }
+    &__navigation {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        
+        li {
+            color: #202124;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative; 
+            padding-bottom: 5px;
+
+// tôi muốn khi hover vào thì sẽ có hiệu ứng dưới chân của text từ giữa ra 2 bên
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: #202124;
+                transition: all 0.3s;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%); // thanh bắt đầu từ giữa
+                transform-origin: center; // thanh mở rộng từ giữa ra 2 bên
+            }
+            
+        }
+    }
+
+    &__cart {
+        background-image: url("https://i.ibb.co/C7xB7MW/Screenshot-2024-07-08-at-19-22-32-removebg-preview.png");
+        width: 50px;
+        height: 100%;
+        background-size: cover; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .number {
+            margin-top: 10px;
+        }
+    }
+
+    &__account {
+        .icon {
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            border: solid 3px #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+
+}
