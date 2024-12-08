@@ -1,7 +1,11 @@
+import FoodList from "../../components/food-list"
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <FoodList />
+      <h1>Home</h1>
+    </div>
   )
 }
 

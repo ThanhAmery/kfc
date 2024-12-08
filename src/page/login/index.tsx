@@ -3,16 +3,23 @@ import api from "../../config/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import AuthenLayout from "../../components/auth-layout";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/features/userSlice";
 
 function Login() {
+
+    // Nguyên tắc DRY: Don't Repeat Yourself: không lặp lại code
+
+    const dispatch = useDispatch();
 
     const navigate = useNavigate();
 
     const handleLogin = async (values) => {
         try{
-            await api.post("login", values);
+            const response = await api.post("login", values);
             // chạy xuống đây => account này có tồn tại
             toast.success("Login successfully!");
+            dispatch(login(response.data)); // lưu thông tin user vào store
             navigate("/");
         }
         catch (error){
@@ -21,7 +28,7 @@ function Login() {
         }
     };
 
-    // Nguyên tắc DRY: Don't Repeat Yourself: không lặp lại code
+    
 
   return (
     <AuthenLayout>
