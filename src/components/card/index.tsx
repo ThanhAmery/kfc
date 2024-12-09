@@ -12,7 +12,7 @@ function Card({ food }: CardProps) {
   return (
     <div className="food-card">
 
-        <img src={image} alt="" />
+        <img src={food.image} alt="" />
 
         <div className="food-card__content">
           <div className="food-card__information">

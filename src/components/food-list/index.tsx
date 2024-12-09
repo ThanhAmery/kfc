@@ -11,7 +11,7 @@ function FoodList() {
 
     const fetchFood = async() => {
        try {
-        const response = await api.get('product');
+        const response = await api.get("product");
         setFoods(response.data);
        }
         catch(err){
