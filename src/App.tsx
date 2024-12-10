@@ -4,6 +4,8 @@ import Layout from "./components/layout";
 import Login from "./page/login";
 import Register from "./page/register";
 import Dashboard from "./components/dashboard";
+import ManageCategory from "./page/admin/manage-category";
+import ManageProduct from "./page/admin/manage-product";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,7 +16,19 @@ function App() {
           {path: "", element: <Home />},
           {path: "/login", element: <Login />},
           {path: "/register", element: <Register />},
-          {path: "/dashboard", element: <Dashboard />},
+          {path: "/dashboard", element: <Dashboard />, 
+            children: [
+              {
+                path: "category",
+                element: <ManageCategory/>,
+              },
+              {
+                path: "product",
+                element: <ManageProduct />,
+              },
+              
+            ]
+          },
         ], 
     },
 
