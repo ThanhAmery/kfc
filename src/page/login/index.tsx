@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import AuthenLayout from "../../components/auth-layout";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/features/userSlice";
+import Link from "antd/es/typography/Link";
+import { Color } from "antd/es/color-picker";
 
 function Login() {
 
@@ -92,6 +94,12 @@ function Login() {
                     />
                     <span>Login with Google</span>
             </Button>
+            &nbsp;
+            <p className="register" style={{textAlign: "center"}}>Bạn chưa có tài khoản? &nbsp;
+            <Link href="/register" style={{color: "black", fontWeight: "bold"}}>Đăng ký</Link>
+               
+            </p>
+            
 
         </Form>
     </AuthenLayout>
