@@ -1,4 +1,7 @@
 import "./index.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/fontawesome-free/css/all.css'; //  import CSS Font Awesome
 
 function Footer() {
   return (
@@ -57,7 +60,7 @@ function Footer() {
           <h4>Download App</h4>
           <div className="footer__app-links">
             <img src="https://static.kfcvietnam.com.vn/images/web/logo_appstore.png" alt="App Store" />
-            <img src="	https://static.kfcvietnam.com.vn/images/web/logo_playstore.png" alt="Google Play" />
+            <img src="https://static.kfcvietnam.com.vn/images/web/logo_playstore.png" alt="Google Play" />
           </div>
         </div>
       </div>
@@ -73,10 +76,16 @@ function Footer() {
         </p>
         <p>© 2024 KFC Vietnam</p>
         <div className="footer__social-icons">
-          <i className="fab fa-facebook-f"></i>
+
+          <FontAwesomeIcon className="" icon={faFacebookF} />
+          <FontAwesomeIcon className="" icon={faInstagram} />
+          <FontAwesomeIcon className="" icon={faYoutube} />
+          <FontAwesomeIcon className="" icon={faTwitter} />
+
+          {/* <i className="fab fa-facebook-f"></i>
           <i className="fab fa-instagram"></i>
           <i className="fab fa-youtube"></i>
-          <i className="fab fa-twitter"></i>
+          <i className="fab fa-twitter"></i> */}
         </div>
       </div>
     </footer>
