@@ -1,0 +1,33 @@
+.food-list__header {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    gap : 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+    img{
+        width: 60px;
+        height: auto;
+    }
+
+    h3{
+        font-size: 24px;
+        position: relative; // Đặt relative để căn chỉnh thanh ngang
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%; // Căn giữa theo chiều dọc
+      left: 100%; // Bắt đầu từ bên phải của chữ
+      margin-left: 15px; // Khoảng cách giữa chữ và thanh ngang
+      width: 200%; // Độ dài của thanh ngang (kéo dài hết bên phải)
+      height: 1.5px; // Độ dày thanh ngang
+      background-color: #ccc; 
+    }
+    }
+
+
+    
+    
+}
