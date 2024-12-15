@@ -11,7 +11,7 @@ function FoodList() {
 
     const fetchFood = async() => {
        try {
-        const response = await api.get("product");
+        const response = await api.get("KFC");
         setFoods(response.data);
        }
         catch(err){
@@ -28,6 +28,7 @@ function FoodList() {
         {foods.map((food) => (
             <Card food={food} key={food.id} />
         ))}
+
     </div>
   )
 }

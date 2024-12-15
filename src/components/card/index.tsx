@@ -9,6 +9,16 @@ function Card({ food }: CardProps) {
 
     const { name, description, image, id, price } = food;
 
+
+    const formatPrice = (price: number): string => {
+      return new Intl.NumberFormat("vi-VN", {
+        style: "currency",
+        currency: "VND",
+        minimumFractionDigits: 0, // Bỏ phần thập phân
+      }).format(price);
+    };
+
+
   return (
     <div className="food-card">
 
@@ -17,7 +27,7 @@ function Card({ food }: CardProps) {
         <div className="food-card__content">
           <div className="food-card__information">
               <span>{name}</span>
-              <span>{price}</span>
+              <span>{formatPrice(price)}</span>
           </div>
 
           <p className="description">
