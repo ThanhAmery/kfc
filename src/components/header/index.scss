@@ -4,6 +4,11 @@
     justify-content: space-between;
     padding: 10px 70px;
     border-bottom: solid rgba($color: #000, $alpha: 0.1) ;
+    position: sticky; // khi cuộn sẽ giữ nguyên header
+    top: 0;
+    z-index: 1000; 
+    background-color: #fff;
+    
 
     &__left, &__right {
         display: flex;
@@ -24,7 +29,7 @@
             position: relative; 
             padding-bottom: 5px;
 
-// tôi muốn khi hover vào thì sẽ có hiệu ứng dưới chân của text từ giữa ra 2 bên
+// khi hover vào thì sẽ có hiệu ứng dưới chân của text từ giữa ra 2 bên
             &:hover {
                 &::after {
                     width: 100%;
