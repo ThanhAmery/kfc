@@ -1,9 +1,10 @@
 .food-card {
-    width: calc(100% / 4);
+    width: calc(100% / 1.2); 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s; // thời gian phóng to khi hover vào thẻ card
+    margin-left: 20px;
 
     img {
         width: 100%;
