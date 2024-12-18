@@ -1,0 +1,25 @@
+.food-category {
+    // display: flex;
+    // gap: 20px;
+    // padding: 20px 100px;
+
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+    gap: 16px; /* Khoảng cách giữa các item */
+    margin: 0 auto; /* Canh giữa nếu cần */
+    padding: 20px 120px;
+    
+    &__item{
+        border-radius: 10px;
+        border: 1px solid #f1f1f1;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h3{
+        margin: 20px;
+    }
+
+}
