@@ -1,0 +1,40 @@
+.cart {
+    margin: 20px 0;
+    h1{
+        margin-left: 150px;
+    }
+    button {
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        padding: .85714286rem 1.71428571rem;
+        background-color: #e4002b;
+        border: 1px solid #e4002b;
+        line-height: 20px;
+        font-size: 15px;
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 150px 50px 150px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #f8f7f5;
+
+        &__info{
+            width: 50%;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin: 0 50px; 
+            
+        }
+        &__image{
+            width: 50%;
+            
+        }
+    }
+}
