@@ -61,6 +61,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+
+        &:active {
+            background-color: rgba($color: #000, $alpha: 0.1);
+            border-radius: 50%;
+            transform: all 0.3s;
+        }
 
         .number {
             margin-top: 10px;
