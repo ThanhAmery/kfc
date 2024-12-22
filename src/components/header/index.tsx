@@ -1,6 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import "./index.scss"
 import { UserOutlined, MenuOutlined } from '@ant-design/icons';
+import { useState } from "react";
+import Sidebar from "../sidebar";
 function Header() {
 
     const navigate = useNavigate();
@@ -9,8 +11,14 @@ function Header() {
 
     const isCartPage = location.pathname === "/cart";
 
+    const [isSidebarVisible, setSidebarVisible] = useState(false);
+
+    const openSidebar = () => setSidebarVisible(true);
+    const closeSidebar = () => setSidebarVisible(false);
+
     return (
-        <div className={`header ${isCartPage ? "header--cart" : ""}`}>
+      <>
+        <div className={`header ${isCartPage ? "header--cart" : ""}`}> 
           <div className="header__left">
             {isCartPage ? (
               <button
@@ -64,12 +72,14 @@ function Header() {
               </div>
               )}
     
-              <div className="header__menu">
+              <div className="header__menu" onClick={openSidebar}>
                 <MenuOutlined />
               </div>
-            </div>
-          
+            </div>       
         </div>
+
+        <Sidebar isVisible={isSidebarVisible} onClose={closeSidebar} />
+      </>
       );
 
 //    return (

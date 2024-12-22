@@ -74,6 +74,10 @@
         }
     }
 
+    &__menu{
+        cursor: pointer;
+    }
+
     &__account {
         .icon {
             font-size: 30px;
