@@ -1,0 +1,87 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; // Mặc định ẩn Sidebar
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden; // Ngăn nội dung tràn ra ngoài
+
+  &--visible {
+      right: 0; 
+  }
+
+  &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+
+      &__close {
+          font-size: 24px;
+          cursor: pointer;
+      }
+  }
+
+  &__content {
+      
+      height: calc(100% - 130px); // Trừ chiều cao của header
+      overflow-y: auto; // Kích hoạt thanh cuộn nếu nội dung vượt quá chiều cao
+  }
+
+  &__footer {
+      padding: 10px 20px;
+      border-top: 1px solid #ddd;
+      background-color: #1d1d1b;
+      text-align: center;
+      padding: 0px;
+      width: 100%;
+      color: #ababab;
+      font-size: 12px;
+
+      .sidebar__social{
+        margin:20px 0;
+        border-bottom: 1px solid #333;
+        padding-bottom: 20px;
+
+        svg { // Áp dụng style cho FontAwesomeIcon
+          font-size: 24px;
+          margin: 0 10px;
+          color: #fff;
+          transition: transform 0.5s ease, color 0.3s ease;
+          cursor: pointer;
+    
+          &:hover {
+            color: #f5c518; 
+            transform: rotate(360deg) scale(1.1); /* Xoay 1 vòng và tăng kích thước */
+          }
+        }
+
+      }
+  }
+
+  .sidebar__menu {
+      list-style: none;
+      padding: 20px;
+      
+      li {
+          padding: 10px 0;
+          cursor: pointer;
+          border-bottom: 1px solid #ddd;
+          
+
+          &:hover {
+              background-color: #f7f7f7;
+          }
+      }
+
+      .sidebar__section {
+          font-weight: bold;
+          margin-top: 20px;
+      }
+  }
+}
