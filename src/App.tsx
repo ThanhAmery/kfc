@@ -8,6 +8,7 @@ import ManageCategory from "./page/admin/manage-category";
 import ManageProduct from "./page/admin/manage-product";
 import ManageVoucher from "./page/admin/manage-voucher";
 import Cart from "./page/cart";
+import Restaurants from "./page/restaurant";
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,7 @@ function App() {
             ]
           },
           {path: "/cart" , element: <Cart />},
+          {path: "/map-kfc", element: <Restaurants />},
         ], 
     },
 
