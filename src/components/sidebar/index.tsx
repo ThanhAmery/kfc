@@ -55,6 +55,7 @@ function Sidebar({ isVisible, onClose }: SidebarProps) {
 
           <li className="sidebar__section">LIÊN HỆ KFC</li>
           <li>Theo dõi đơn hàng</li>
+          <li>Hệ Thống Nhà Hàng</li>
           <li>Liên hệ KFC</li>
 
           <li className="sidebar__section">CHÍNH SÁCH</li>
