@@ -12,6 +12,11 @@
     &__item{
         border-radius: 10px;
         border: 1px solid #f1f1f1;
+        transition: all 0.3s; // thời gian phóng to khi hover vào thẻ card
+
+        &:hover {
+            transform: scale(1.05); // khi hover vào thẻ card thì thẻ card sẽ phóng to lên 1.05 lần
+        }
     }
 
     img {
