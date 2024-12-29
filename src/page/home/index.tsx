@@ -3,6 +3,7 @@ import FoodCategory from "../../components/food-category"
 import FoodList from "../../components/food-list"
 import "./index.scss"
 
+
 function Home() {
   return (
     <div>
@@ -18,7 +19,21 @@ function Home() {
         <h3>CÓ THỂ BẠN SẼ THÍCH MÓN NÀY</h3>
       </div>
       <FoodList />
+
+      <div className="food-list__footer">
+        <div className="food-list__footer__banner">
+          <img src="https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/lg/banner.jpg?v=13JMyg" alt="" />
+        </div>
+
+
+        <div className="food-list__footer__social-icons">
+          <img src="https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/boton-google.png" alt="" />
+          <img src="https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/boton-app-store.png" alt="" />
+        </div>
+      </div>
+    
       
+
     </div>
   )
 }
