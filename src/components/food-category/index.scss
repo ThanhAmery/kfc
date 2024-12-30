@@ -27,4 +27,15 @@
         margin: 20px;
     }
 
+    @media screen and (max-width: 768px){    
+        grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+        padding: 20px;
+        
+    }
+    
+    @media screen and (max-width: 480px){
+        grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột bằng nhau */
+        
+    }
+
 }
