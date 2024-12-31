@@ -15,17 +15,45 @@
         font-size: 24px;
         position: relative; // Đặt relative để căn chỉnh thanh ngang
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%; // Căn giữa theo chiều dọc
-      left: 100%; // Bắt đầu từ bên phải của chữ
-      margin-left: 15px; // Khoảng cách giữa chữ và thanh ngang
-      width: 200%; // Độ dài của thanh ngang (kéo dài hết bên phải)
-      height: 1.5px; // Độ dày thanh ngang
-      background-color: #ccc; 
-    }
+        &::after {
+        content: "";
+        position: absolute;
+        top: 50%; // Căn giữa theo chiều dọc
+        left: 100%; // Bắt đầu từ bên phải của chữ
+        margin-left: 15px; // Khoảng cách giữa chữ và thanh ngang
+        width: 200%; // Độ dài của thanh ngang (kéo dài hết bên phải)
+        height: 1.5px; // Độ dày thanh ngang
+        background-color: #ccc; 
+        }
     } 
+
+
+    @media (max-width: 1024px){
+        margin-left: 50px;
+        img{
+            width: 50px;
+        }
+        h3{
+            font-size: 20px;
+            &::after {
+                width: 150%;
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        margin-left: 20px;
+        img{
+            width: 50px;
+        }
+        h3{
+            font-size: 20px;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -58,5 +86,12 @@
         gap: 20px;
         cursor: pointer;
         padding-right: 150px;
+    }
+
+    @media screen and (max-width: 768px){
+        &__social-icons {
+            padding-right: 50px;
+        }
+        
     }
 }
