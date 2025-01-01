@@ -33,4 +33,11 @@
     .description {
         height: 100px;
     }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    }
 }
