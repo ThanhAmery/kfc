@@ -17,5 +17,21 @@
         }
       }
 
+    @media screen and (max-width: 768px){
+        padding: 20px;
+        gap: 16px;
 
+        .swiper{
+          //ẩn nút prev và next
+          .swiper-button-prev,
+          .swiper-button-next {
+            display: none;
+          }
+
+          .swiper-slide{
+            flex: 1 0 calc(100% - 250px); //chia 1 phần bằng nhau cho các phần tử con
+            max-width: calc(100% - 250px); // giới hạn chiều rộng của phần tử con
+          }
+        }
+    }
 }
