@@ -52,6 +52,7 @@ function Header() {
     
           {isCartPage && (
               <img width={100} alt="logo"
+              className="header__logo_cart"
               src="https://static.kfcvietnam.com.vn/images/web/kfc-logo-mobile.svg?v=5.0"
               />
           )}
