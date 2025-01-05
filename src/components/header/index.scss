@@ -104,4 +104,14 @@
         font-size: 15px;
         border-radius: 25px;
     }
+
+    @media screen and (max-width: 500px) {
+        padding: 10px 20px;
+        &__left, &__right {
+            gap: 10px;
+        }
+        &__navigation {
+            display: none;
+        }
+    }
 }
