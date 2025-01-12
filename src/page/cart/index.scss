@@ -55,4 +55,22 @@
             }
         }
     }
+
+    @media screen and (max-width: 425px){
+        h1{
+            margin-left: 10px;
+        }
+        &__item{
+            margin: 10px 10px 50px 10px;
+            &__info{
+                font-size: 0.8rem;
+            }
+            &__image{
+                .img{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
 }
