@@ -66,8 +66,11 @@
                 font-size: 0.8rem;
             }
             &__image{
-                .img{
-                    width: 100%;
+                width: 100%;
+                padding: 0 0 0 0;
+                img{
+                    width: 285px;
+                    height: 300px;
                 }
             }
         }
