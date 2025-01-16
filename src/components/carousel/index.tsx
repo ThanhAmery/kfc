@@ -10,6 +10,7 @@ import { Autoplay, Navigation, } from "swiper/modules";
 const Carousel: React.FC = () => { // React.FC is a generic type that is used to define the type of props that a component can accept.
   const images = [
     // "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/DoubleDay.webp?v=3J89N4",
+    "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/Chizza.webp?v=46KM9g",
     "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/ComboTet.webp?v=3QjJEL",
     "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/Voucher.webp?v=4BoXag",
     // "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/ComboSting.webp?v=gbm184",
