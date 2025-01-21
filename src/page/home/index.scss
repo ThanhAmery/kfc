@@ -54,6 +54,20 @@
             }
         }
     }
+
+    @media (max-width: 430px) {
+        // margin-left: 10px;
+        // img{
+        //     width: 40px;
+        // }
+        h3{
+            font-size: 18px;
+            &::after {
+                width: 0;
+            }
+            
+        }
+    }
 }
 
 
