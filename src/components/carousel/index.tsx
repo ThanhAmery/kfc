@@ -17,7 +17,7 @@ const Carousel: React.FC = () => { // React.FC is a generic type that is used to
     "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/Festive.webp?v=gbm184",         //Đại tiệc gà giòn 
     // "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/Dinner-Dec.webp?v=gbm184",   //combo gia đình 
     "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/TNAGP4.webp?v=K4P1bg",          //Trưa nay ăn gì 
-    "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/DealTA.webp?v=3J89N4",          //Tặng ngay cho đơn hàng từ 170k
+    // "https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/DealTA.webp?v=3J89N4",          //Tặng ngay cho đơn hàng từ 170k
   ];
 
   return (
