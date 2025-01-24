@@ -84,4 +84,16 @@
           margin-top: 20px;
       }
   }
+
+    // @media screen and (max-width: 768px){
+    //     width: 250px;
+    // }
+
+    @media screen and (max-width: 480px){
+        &__logo{
+            img{
+                width: 80px;
+            }
+        }
+    }
 }
