@@ -1,4 +1,4 @@
-import { Button, Form, Input, Select } from "antd"
+import { Button, Checkbox, Form, Input, Select } from "antd"
 import AuthenLayout from "../../components/auth-layout"
 import { toast } from "react-toastify";
 import api from "../../config/api";
@@ -82,6 +82,23 @@ function Register() {
                 <Input.Password placeholder="Mật khẩu" />
             </Form.Item>
 
+            <Form.Item
+            name = "agreement"
+            valuePropName="checked"
+            rules = {[
+                {
+                    validator: (_, value) => { // validator là 1 function nhận vào 2 tham số, tham số thứ 2 là giá trị của field đó, tham số thứ 1 là error message 
+                        if(value){
+                            return Promise.resolve(); // trả về Promise.resolve() nếu giá trị hợp lệ 
+                        }
+                        return Promise.reject("Vui lòng chọn Đồng Ý với các Chính Sách Hoạt Động của KFC Việt Nam.");
+                    }
+                }
+            ]}
+            >
+                <Checkbox>Tôi đã đọc và đồng ý với các điều khoản</Checkbox>
+            </Form.Item>
+            
             {/* <Form.Item
             label="Role"
             name="role"
