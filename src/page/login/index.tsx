@@ -80,6 +80,24 @@ function Login() {
             </Button>
                     
             <h2>Hoặc tiếp tục với</h2>
+
+            <Button 
+            className="login__google" 
+            style={{
+                    width: "100%",
+                    marginTop: 10,
+                    backgroundColor: "black"
+                }}
+                >
+                <img
+                    // src="https://hienlaptop.com/wp-content/uploads/2024/12/apple-logo-vector-35.webp"
+                    src="https://png.pngtree.com/png-vector/20240528/ourmid/pngtree-beautiful-realistic-apple-png-image_12542814.png"
+                    alt=""
+                    width={30}
+                    />
+                    <span style={{color: "white"}}>Login with Apple</span>
+            </Button>
+
             <Button 
             className="login__google" 
             style={{
