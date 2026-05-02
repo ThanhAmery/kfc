@@ -46,6 +46,7 @@ function Header() {
                     <li>Khuyến mãi</li>
                     <li>Dịch vụ tiệc</li>
                     <li onClick={() => navigate("/map-kfc")}>Hệ thống nhà hàng</li>
+                    <li>Thẻ Quà Tặng</li>
                 </ul>
             )}
           </div>
